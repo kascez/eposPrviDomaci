@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: darkcyan;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
     width: 100%;
     height: 100%;
+    background:#43455A;
+    overflow: hidden;
 }
 
 .menu ul {
@@ -51,12 +53,13 @@
 }
 
 .banner {
-    width: 80%;
-    height: 70%;
-    top: 25%;
-    left: 130px;
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
+    padding-left: 146px;
     position: absolute;
     color: white;
+    background: #43455A;
 }
 
 .app-text {
@@ -87,5 +90,86 @@
 .app-picture img {
     width: 100%;
     margin-top: -20px;
-    padding-left: 50px;
+}
+
+.play-btn {
+    margin-left: 40px;
+    display: inline-flex;
+}
+
+.play-btn-inner {
+    height: 50px;
+    width: 50px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, red, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.play-btn-inner .fa {
+    padding: 18px 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+small {
+    margin: auto 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.quick-links {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(227,57,45,1) 12%, rgba(0,212,255,1) 96%);
+    border-style: solid;
+    border-width: 2px 2px 0px 0px;
+    border-color: black;
+}
+
+.quick-links ul {
+    display: inline-flex;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.quick-links ul li {
+    list-style: none;
+    margin: 0 50px;
+    cursor: pointer;
+}
+
+.quick-links ul li .fa {
+    font-size: 25px;
+    color: white;
+}
+
+.quick-links ul li p {
+    margin-top: 15px;
+    font-size: 10px;
+    color: white;
+}
+
+.social-icons {
+    right: 72px;
+    bottom: 35px;
+    position: absolute;
+}
+
+.social-icons ul li {
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.social-icons ul li a {
+    color: #999;
+    border-radius: 50%;
+    border: 1px solid #999;
+    padding: 5px;
+    display: block;
 }
